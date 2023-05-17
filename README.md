@@ -34,43 +34,43 @@ The database design schema consists of the following tables:
 
 #### Staging_events Table
 
-Staging table contains the data copied from the S3 log data
+Staging table contains the data copied from the S3 log data.
 
 ![alt text](Images/staging_events_table.png)
 
 #### Staging_songs Table
 
-Staging table contains the data copied from the S3 song data
+Staging table contains the data copied from the S3 song data.
 
 ![alt text](Images/staging_songs_table.png)
 
 #### Songplay Table
 
-This is the fact table for the Star Schema that will be used for analysis
+This is the fact table for the Star Schema that will be used for analysis.
 
 ![alt text](Images/songplay_table.png)
 
 #### Songs Table
 
-Contains details on songs from song files
+Contains details on songs from song files.
 
 ![alt text](Images/song_table.png)
 
 #### Artists Table
 
-Contains details on artist from song files
+Contains details on artist from song files.
 
 ![alt text](Images/artist_table.png)
 
 #### Users Table
 
-Contains data on sparkify users derived from log files
+Contains data on sparkify users derived from log files.
 
 ![alt text](Images/users_table.png)
 
 #### Time Table
 
-Contains a list of timestamps and converted time data from log files
+Contains a list of timestamps and converted time data from log files.
 
 ![alt text](Images/time_table.png)
 
@@ -89,6 +89,6 @@ This project consists of the following files:
 
 ### How To Run
 
-Firstly, you need to create IAM Role that has read access to S3 bucket, then you need to create the Redshift Cluster and assosiate the IAM role to it. After that, u need to fill in the IAM role ARN and the Redshift Cluster configurations into the `dwh.cfg` file. Finally run `create_tables.py` file to drop and create the tables and then run `etl.py` to insert the data into the tables
+Firstly, you need to create IAM Role that has read access to S3 bucket, then you need to create the Redshift Cluster and assosiate the IAM role to it. After that, u need to fill in the IAM role ARN and the Redshift Cluster configurations into the `dwh.cfg` file. Finally run `create_tables.py` file to drop and create the tables and then run `etl.py` to insert the data into the tables.
 
 
