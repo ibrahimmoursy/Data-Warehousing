@@ -35,7 +35,7 @@ The database design schema consists of the following tables:
 
 Staging table contains the data copied from the S3 log data
 
-![alt text](images/staging_events_table.png)
+![alt text](Images/staging_events_table.png)
 
 #### Staging_songs Table
 
