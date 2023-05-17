@@ -25,7 +25,7 @@ In this project I built an ETL pipeline that extracts data from Amazon's S3, sta
 
 ### ETL Process
 
-Each Data set was copied into a table created in the Redshift Cluster, and then these tables were used to insert values into the Star schema, so that the data can be ready for analyses later.
+Each Data set was copied into a table created in the Redshift Cluster, and then these tables were used to insert values into the Star schema, so that the data can be ready for analysis later.
 
 ---
 
