@@ -83,6 +83,7 @@ This project consists of the following files:
 + `create_tables.py` - This script uses the sql_queries.py file to create new tables or drop old tables in the database.
 + `etl.py` - This script is used to build ETL processes which will read every file contained S3 bucket, copy its data into tables in the Redshift Cluster, then insert its values into the Star Schema using variables in sql_queries.py file.
 + `dwh.cfg` - This File contains the IAM role ARN, the path to S3 Datasets and the Redshift Cluster configurations.
++ `test.ipynb` - This notebook is used for testing purposes after finishing, to run queries on (you can also run queries in AWS Redshift query editor). 
 
 ---
 
