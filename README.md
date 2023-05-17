@@ -28,6 +28,53 @@ In this project I built an ETL pipeline that extracts data from Amazon's S3, sta
 Each Data set was copied into a table created in the Redshift Cluster, and then these tables were used to insert values into the Star schema, so that the data can be ready for analysis later.
 
 ---
+### Database 
+The database design schema consists of the following tables:
+
+#### Staging_events Table
+
+Staging table contains the data copied from the S3 log data
+
+![alt text](images/staging_events_table.png)
+
+#### Staging_songs Table
+
+Staging table contains the data copied from the S3 song data
+
+![alt text](images/staging_songs_table.png)
+
+#### Songplay Table
+
+This is the fact table for the Star Schema that will be used for analysis
+
+![alt text](images/songplay_table.png)
+
+#### Songs Table
+
+Contains details on songs from song files
+
+![alt text](images/songs_table.png)
+
+#### Artists Table
+
+Contains details on artist from song files
+
+![alt text](images/artists_table.png)
+
+#### Users Table
+
+Contains data on sparkify users derived from log files
+
+![alt text](images/users_table.png)
+
+#### Time Table
+
+Contains a list of timestamps and converted time data from log files
+
+![alt text](images/time_table.png)
+
+
+---
 
 ### Project Files 
 This project consists of the following files:
