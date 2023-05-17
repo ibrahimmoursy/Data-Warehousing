@@ -26,7 +26,7 @@ In this project I built an ETL pipeline that extracts data from Amazon's S3, sta
 
 ### ETL Process
 
-Each Data set was copied into a table created in the Redshift Cluster, and then these tables were used to insert values into the Star schema, so that the data can be ready for analysis later.
+Each Dataset was copied into a table created in the Redshift Cluster, and then these tables were used to insert values into the Star schema, so that the data can be ready for analysis later.
 
 ---
 ### Database 
@@ -52,25 +52,25 @@ This is the fact table for the Star Schema that will be used for analysis.
 
 #### Songs Table
 
-Contains details on songs from song files.
+Dimension table that contains details on songs from song files.
 
 ![alt text](Images/song_table.png)
 
 #### Artists Table
 
-Contains details on artist from song files.
+Dimension table that contains details on artist from song files.
 
 ![alt text](Images/artist_table.png)
 
 #### Users Table
 
-Contains data on sparkify users derived from log files.
+Dimension table that contains data on sparkify users derived from log files.
 
 ![alt text](Images/users_table.png)
 
 #### Time Table
 
-Contains a list of timestamps and converted time data from log files.
+Dimension table that contains a list of timestamps and converted time data from log files.
 
 ![alt text](Images/time_table.png)
 
@@ -89,6 +89,6 @@ This project consists of the following files:
 
 ### How To Run
 
-Firstly, you need to create IAM Role that has read access to S3 bucket, then you need to create the Redshift Cluster and assosiate the IAM role to it. After that, u need to fill in the IAM role ARN and the Redshift Cluster configurations into the `dwh.cfg` file. Finally run `create_tables.py` file to drop and create the tables and then run `etl.py` to insert the data into the tables.
+Firstly, you need to create IAM Role that has read access to S3 bucket, then you need to create the Redshift Cluster and assosiate the IAM role to it. After that, you need to fill in the IAM role ARN and the Redshift Cluster configurations into the `dwh.cfg` file. Finally run `create_tables.py` file to drop and create the tables and then run `etl.py` to insert the data into the tables.
 
 
