@@ -41,25 +41,25 @@ Staging table contains the data copied from the S3 log data
 
 Staging table contains the data copied from the S3 song data
 
-![alt text](images/staging_songs_table.png)
+![alt text](Images/staging_songs_table.png)
 
 #### Songplay Table
 
 This is the fact table for the Star Schema that will be used for analysis
 
-![alt text](images/songplay_table.png)
+![alt text](Images/songplay_table.png)
 
 #### Songs Table
 
 Contains details on songs from song files
 
-![alt text](Images/songs_table.png)
+![alt text](Images/song_table.png)
 
 #### Artists Table
 
 Contains details on artist from song files
 
-![alt text](Images/artists_table.png)
+![alt text](Images/artist_table.png)
 
 #### Users Table
 
