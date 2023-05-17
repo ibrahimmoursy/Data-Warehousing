@@ -53,25 +53,25 @@ This is the fact table for the Star Schema that will be used for analysis
 
 Contains details on songs from song files
 
-![alt text](images/songs_table.png)
+![alt text](Images/songs_table.png)
 
 #### Artists Table
 
 Contains details on artist from song files
 
-![alt text](images/artists_table.png)
+![alt text](Images/artists_table.png)
 
 #### Users Table
 
 Contains data on sparkify users derived from log files
 
-![alt text](images/users_table.png)
+![alt text](Images/users_table.png)
 
 #### Time Table
 
 Contains a list of timestamps and converted time data from log files
 
-![alt text](images/time_table.png)
+![alt text](Images/time_table.png)
 
 
 ---
