@@ -31,48 +31,71 @@ Each Dataset was copied into a table created in the Redshift Cluster, and then t
 ---
 ### Database 
 The database design schema consists of the following tables:
+<details>
+<summary>
+Staging_events Table
+</summary>
 
-#### Staging_events Table
-
-Staging table contains the data copied from the S3 log data.
+> Staging table contains the data copied from the S3 log data.
 
 ![alt text](Images/staging_events_table.png)
 
-#### Staging_songs Table
+</details>
 
-Staging table contains the data copied from the S3 song data.
+<details>
+<summary>
+Staging_songs Table
+</summary>
+
+> Staging table contains the data copied from the S3 song data.
 
 ![alt text](Images/staging_songs_table.png)
 
-#### Songplay Table
+</details>
 
-This is the fact table for the Star Schema that will be used for analysis.
+<details>
+<summary>
+Songplay Table
+</summary>
+
+> This is the fact table for the Star Schema that will be used for analysis.
 
 ![alt text](Images/songplay_table.png)
+</details>
 
-#### Songs Table
+<details>
+<summary>
+Songs Table
+</summary>
 
-Dimension table that contains details on songs from song files.
+> Dimension table that contains details on songs from song files.
 
 ![alt text](Images/song_table.png)
+</details>
 
-#### Artists Table
+<details>
+<summary> Artists Table </summary>
 
-Dimension table that contains details on artist from song files.
+> Dimension table that contains details on artist from song files.
 
 ![alt text](Images/artist_table.png)
+</details>
 
-#### Users Table
+<details>
+<summary> Users Table </summary>
 
-Dimension table that contains data on sparkify users derived from log files.
+> Dimension table that contains data on sparkify users derived from log files.
 
 ![alt text](Images/users_table.png)
+</details>
 
-#### Time Table
+<details>
+<summary> Time Table </summary>
 
-Dimension table that contains a list of timestamps and converted time data from log files.
+> Dimension table that contains a list of timestamps and converted time data from log files.
 
 ![alt text](Images/time_table.png)
+</details>
 
 
 ---
