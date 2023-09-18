@@ -1,5 +1,7 @@
 # Project: Data Warehouse
 
+![alt text](Images/S3_to_Redshift_ETL.png)
+
 ## Contents
 
 + [Project Discription](#Project-Discription)
@@ -14,6 +16,7 @@
 ### Project Discription
 
 In this project I built an ETL pipeline that extracts data from Amazon's S3, staged them in Redshift, and transformed data into a set of dimensional tables for analytics team to continue finding insights into what songs users are listening to. 
+
 
 ---
 
